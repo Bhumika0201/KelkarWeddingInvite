@@ -1,0 +1,42 @@
+.overlay-host{
+  position: relative;
+
+
+
+
+  color: #f1f1f1;
+  width: 100%;
+
+  color:black;
+  padding: vw;
+  text-align: center;
+}
+
+.images{
+  padding: 0;
+}
+
+
+.text {
+  font-family: 'Tangerine', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+  padding: 0px 0px;
+  position: absolute;
+  top: 13%;
+  left: 20.8%;
+  opacity: 1;
+
+}
+
+
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+.body1 {
+  background-image: url("../../assets/events.png");
+
+}

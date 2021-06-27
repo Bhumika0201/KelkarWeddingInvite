@@ -1,0 +1,36 @@
+<div>
+  <p  style="font-family: 'Merienda', cursive;margin:0.01vw;font-size:5vw ">
+    Help us capture all the moments of our wedding ..
+  </p>
+</div>
+<input class="file-input" type="file"   (change)="onDrop($event.target.files)" id="files" class="hidden">
+<div *ngIf="percentage | async as pct">
+    <progress [value]="pct" max="100"></progress>
+    {{ pct | number }}%
+  </div>
+<div *ngIf="snapshot | async as snap">
+
+
+
+
+
+
+  </div>
+  <div class="row">
+    <div class="portfolio-item" *ngFor="let url of urllist">
+
+    <div class="portfolio-item__wrapper">
+     <div class="portfolio-item__demo">
+        <img [src]="url.payload.doc.data().downloadURL">
+        <span class="quick-view">
+           <span class="quick-demo">
+              <a [href]="url.payload.doc.data().downloadURL" target="_blank" rel="noopener">DOWNLOAD</a>
+              </span>
+        </span>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>

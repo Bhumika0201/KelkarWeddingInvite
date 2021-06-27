@@ -1,0 +1,23 @@
+<table>
+    <thead>
+      <tr>
+        <th>Guest Name</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let guest of guestlist">
+
+        <td>{{ guest.payload.doc.data().firstName }}</td>
+
+
+        <td>
+        <div class="form-group">
+          <button class="btn btn-primary"  [hidden]="guest.payload.doc.data().completed"
+          (click)="deleteGuest(guest)">Delete</button>
+        </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,21 @@
+<p>DELETE PHOTOS</p>
+
+  <div class="row">
+    <div class="portfolio-item" *ngFor="let url of urllist">
+
+    <div class="portfolio-item__wrapper">
+     <div class="portfolio-item__demo">
+        <img [src]="url.payload.doc.data().downloadURL">
+        <span class="quick-view">
+           <span class="quick-demo">
+              <a   [hidden]="url.payload.doc.data().completed"
+              (click)="deletePhoto(url)">DELETE</a>
+              </span>
+        </span>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
